@@ -7,7 +7,7 @@ env:
 services:
    - postgresql
 install:
-    - pipenv install
+    - pip install -r requirement.txt
 
 script:
     - coverage run --source='tutotravisapp' manage.py test && coverage report && coverage html
