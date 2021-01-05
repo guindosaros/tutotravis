@@ -2,8 +2,6 @@ language: python
 
 python:
     - "3.7"
-    - "3.8"
-    - "3.9"
 env:
     - SECRET_KEY='TEST'
 services:
@@ -12,6 +10,6 @@ install:
     - pipenv install
 
 script:
-    # -  coverage run --source='tutotravisapp' manage.py test && coverage report && coverage html
+    - coverage run --source='tutotravisapp' manage.py test && coverage report && coverage html
 after_success:
     - coveralls
