@@ -20,6 +20,7 @@ env:
 services:
    - postgresql
 install:
+    - pip3 install --upgrade pip 
     - pip install -r requirement.txt
 
 script:
