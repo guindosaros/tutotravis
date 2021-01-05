@@ -12,6 +12,6 @@ install:
     - pipenv install
 
 script:
-    -  coverage run --source='tutotravisapp' manage.py test && coverage report && coverage html
+    # -  coverage run --source='tutotravisapp' manage.py test && coverage report && coverage html
 after_success:
     - coveralls
